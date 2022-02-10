@@ -23,7 +23,7 @@ function totalBalance(tBalance, amount, isTrue) {
         if (totalAmount >= amount) {
             AmountText.innerHTML = totalAmount - amount;
         } else {
-            alert('balance is Low');
+            alert('balance is big');
         }
     }
 }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <!-- header section start-->
+        <h1 class="text-center text-5xl my-14">Let's get some <span class="font-semibold text-fuchsia-700">Moooooney
+                !!!</span> </h1>
+    </header>
+    <!-- Main section -->
+    <main class="my-10">
+        <section class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+            <div class=" bg-green-300 px-7 py-8 rounded">
+                <h2 class="text-3xl">Deposit</h2>
+                <h3 class="text-5xl">$<span id="deposit-blance">00.0</span></h3>
+            </div>
+            <div class=" bg-blue-300 px-7 py-8 rounded">
+                <h2 class="text-3xl">Withdraw</h2>
+                <h3 class="text-5xl">$ <span id="withdraw-balance">00.0</span></h3>
+            </div>
+            <div class=" bg-yellow-300 px-7 py-8 rounded">
+                <h2 class="text-3xl">Blanch</h2>
+                <h3 class="text-5xl">$<span id="total-blanch">1400.0</span></h3>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 gap-4 w-9/12 mx-auto my-10 ">
+            <div class=" bg-pink-300 px-7 py-8 rounded">
+                <h3 class=" text-3xl text-white">Deposit Now</h3>
+                <input class="rounded block w-full p-2  my-5 border-2 border-white-600" type="text" name="deposit"
+                    id="deposit" placeholder="$$ Deposit Blanch">
+                <button class="bg-purple-600 w-1/4 py-2 px-4 text-white text-lg rounded"
+                    id="deposit-btn">Submit</button>
+            </div>
+            <!-- withdraw -->
+            <div class=" bg-purple-300 px-7 py-8 rounded">
+                <h3 class=" text-3xl text-white">Withdraw Now</h3>
+                <input class="rounded block w-full p-2  my-5 border-2 border-white-600" type="text" name="withdraw"
+                    id="withdrawinput" placeholder="$$ withdraw Blanch">
+                <button class="bg-purple-600 w-1/4 py-2 px-4 text-white text-lg rounded"
+                    id="withdraw-btn">Submit</button>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- script link -->
+    <script src="js/banking.js"></script>
+</body>
+
+</html>
